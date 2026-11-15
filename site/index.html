@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kisoroszi Településterv – mondja el véleményét</title>
+  <meta name="description" content="Közérthető összefoglaló Kisoroszi új Településtervéről, részenként kérdésekkel. Lakossági kezdeményezés, a vélemények összesítve kerülnek az önkormányzathoz.">
+  <meta name="referrer" content="no-referrer">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#parts">Ugrás a tartalomra</a>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="kicker">Lakossági kezdeményezés</p>
+      <h1>Kisoroszi új Településterve – <span>mit gondol róla?</span></h1>
+      <p class="lead">Elkészült Kisoroszi új Településtervének egyeztetési változata: közel 180 oldal és több nagy térkép.
+        Ezen az oldalon <strong>12 rövid részben</strong> foglaltuk össze, mit javasol, és minden rész után megkérdezzük az Ön véleményét.</p>
+      <div class="facts">
+        <div><strong>Kb. 15–20 perc</strong><span>Bármelyik rész kihagyható, minden kérdés opcionális.</span></div>
+        <div><strong>Részenként küldi el</strong><span>A válaszai akkor is megmaradnak, ha nem ér a végére.</span></div>
+        <div><strong>Lezárás: <span data-close-at></span></strong><span>Utána összesítve adjuk át az önkormányzatnak.</span></div>
+      </div>
+      <p class="who">Ezt az oldalt <strong data-controller-name></strong>, kisoroszi lakos készítette magánszemélyként.
+        Ez <strong>nem az önkormányzat hivatalos felülete</strong>. A beérkezett véleményeket összesítve,
+        a szöveges észrevételeket szó szerint, név nélkül adja át az önkormányzatnak a hivatalos határidőig
+        (<span data-official-deadline></span>). Az összefoglaló a tervdokumentumokon alapul. Ha valami pontatlan,
+        az eredeti dokumentum az irányadó.</p>
+    </div>
+  </header>
+
+  <div id="test-banner" class="banner warn" hidden>Teszt mód: az űrlap még nincs bekötve, a válaszok nem kerülnek elküldésre.</div>
+  <div id="closed-banner" class="banner" hidden>A véleménygyűjtés lezárult. Köszönjük mindenkinek, aki kitöltötte! Az oldalt továbbra is elolvashatja.</div>
+
+  <div class="progress" aria-hidden="false">
+    <div class="wrap progress-inner">
+      <div class="progress-track"><div id="progress-bar" class="progress-fill"></div></div>
+      <span id="progress-text" class="progress-text"></span>
+    </div>
+  </div>
+
+  <div class="wrap layout">
+    <nav class="toc" aria-label="Részek">
+      <h2>Részek</h2>
+      <ol id="toc-list"></ol>
+    </nav>
+
+    <main id="parts">
+      <!-- spam-csapda: embernek láthatatlan -->
+      <div class="hp" aria-hidden="true">
+        <label for="hp_website">Weboldal</label>
+        <input id="hp_website" name="website" type="text" tabindex="-1" autocomplete="off">
+      </div>
+    </main>
+  </div>
+
+  <section class="wrap end" id="vege">
+    <h2>Köszönjük!</h2>
+    <p>Ha minden részt elküldött, nincs több teendője. Az elküldött részek mellett a tartalomjegyzékben pipa látható.</p>
+
+    <div id="mailto-box" class="card">
+      <h3>Szeretné saját nevében is, hivatalosan beküldeni?</h3>
+      <p>Az önkormányzat a <a data-official-email></a> címre vagy személyesen, ügyfélfogadási időben várja a lakossági
+        észrevételeket. A határidő: <strong data-official-deadline></strong>.
+        Az alábbi gombbal egy előre kitöltött e-mailt nyithat meg az Ön szöveges válaszaival, amelyet a levelezőjében még átírhat.</p>
+      <p><a class="btn" href="#">E-mail megnyitása a hivatalnak</a>
+        <button type="button" class="btn ghost" id="copy-text">Szöveg másolása</button></p>
+      <label class="sr-only" for="mailtext">Az e-mail szövege</label>
+      <textarea id="mailtext" rows="6" readonly></textarea>
+    </div>
+  </section>
+
+  <footer class="wrap footer">
+    <h2>Adatkezelési tájékoztató</h2>
+    <p><strong>Adatkezelő:</strong> <span data-controller-name></span> magánszemély, elérhetőség: <a data-controller-email></a>.</p>
+    <p><strong>Mit gyűjtünk?</strong> Az Ön által megadott válaszokat, valamint ha megadja, a nevét és e-mail címét. Egy véletlenszerű,
+      névtelen kitöltő-azonosítót is, amely összeköti ugyanannak a kitöltőnek a részenként elküldött válaszait.</p>
+    <p><strong>Mire használjuk?</strong> A vélemények összesítésére és átadására Kisoroszi Község Önkormányzatának a Településterv
+      egyeztetése keretében. Jogalap: az Ön hozzájárulása (a válaszok elküldése).</p>
+    <p><strong>Mit kap meg az önkormányzat?</strong> A számszerű összesítést és a szöveges észrevételeket szó szerint, <strong>név nélkül</strong>.
+      A neve csak akkor szerepel, ha ehhez kifejezetten hozzájárult. Az e-mail címét senkinek nem adjuk át, csak az összesítésről
+      szóló értesítéshez használjuk. Átadás előtt a szöveges válaszokból törölhetjük azt, ami valakit azonosíthatóvá tenne.</p>
+    <p><strong>Hol tároljuk?</strong> A válaszok a Google Forms / Google Táblázatok szolgáltatásban tárolódnak (adatfeldolgozó: Google).
+      Az átadás után 3 hónappal töröljük őket.</p>
+    <p><strong>Az Ön jogai:</strong> kérheti a válaszai megtekintését vagy törlését a fenti e-mail címen. Ehhez adja meg a kitöltés
+      idejét és ha lehet, a szöveges válaszai egy részletét. Panasszal a Nemzeti Adatvédelmi és Információszabadság Hatósághoz
+      (naih.hu) fordulhat.</p>
+    <p><strong>Sütik:</strong> az oldal nem használ sütiket és nem követi a látogatókat. A még el nem küldött válaszokat csak az Ön
+      böngészője tárolja (helyi tárhely), hogy később folytathassa.
+      <button type="button" class="link-btn" id="clear-data">Mentett válaszaim törlése erről az eszközről</button></p>
+    <p class="small">Forrás: Kisoroszi Község Településterve, Településfejlesztési terv és Megalapozó vizsgálat (egyeztetési, munkaközi változat, 2026. október),
+      <a href="https://www.kisoroszi.hu/hirek/kisoroszi-uj-telepulestervenek-elokeszitese" target="_blank" rel="noopener">kisoroszi.hu</a>.
+      A térképrészletek a Megalapozó vizsgálatból származnak.</p>
+  </footer>
+
+  <script src="content.js"></script>
+  <script src="form-config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
