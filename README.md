@@ -42,7 +42,7 @@ Az oldal címe: `https://<felhasználónév>.github.io/kisoroszi-telepulesterv/s
 
 ## 4. Lezárás és összesítés
 
-- Az oldal a `form-config.js`-ben megadott `closeAt` időpontban (alapból **2026. nov. 16. 14:00**) automatikusan lezár.
+- Az oldal a `form-config.js`-ben megadott `closeAt` időpontban (alapból **2026. nov. 16. 16:30**) automatikusan lezár.
   A Formot is lezárhatja: Apps Scriptben a **closeForm** függvény, vagy a Formon „Válaszok elfogadása” kikapcsolása.
 - **Gyors áttekintés:** a Google Form „Válaszok” fülén kérdésenként grafikonok láthatók. Ezt a linket át is adhatja.
   (Figyelem: ha valaki egy részt módosítás után újra elküldött, ott kétszer számít.)
